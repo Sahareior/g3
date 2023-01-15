@@ -1,8 +1,13 @@
-/* google font */
+/* ...........................................google font............................. */
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
 body{
     font-family: 'Work Sans', sans-serif;
 }
+
+/*................................. header section ...............................*/
+
+
 .header{
     display: flex;
     flex-direction: column;
@@ -35,34 +40,45 @@ body{
     gap: 26px;
     list-style-type: none;
 }
-/* banner section */
+
+/* -------------------------------------------------------banner section ------------------------------------------------------*/
+
+
+
 .hero{
 text-align: center;
 padding: 30px;
 margin-top: 20px;
 }
+.hero-img{
+    margin-top: 70px;
+}
+.hero
 .banner{
     width: 1100px;
     margin-top: 30px;
     margin-left: 0px;
 }
-.primary{
+.container2 .images img{
+    height: 243px;
+    width: 243px;
+}
+.btn-primary{
     width: 170px;
     height: 64px;
     background: #FF900E;
     color: #ffff;
     border-radius: 8px;
 }
-/* features sections */
-.images{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+.btn-primary:hover{
+    cursor: pointer;
+    background-color: rgba(43, 161, 161, 0.897);
 }
-.container2 .images img{
-    height: 243px;
-    width: 243px;
-}
+
+/* -----------------------------------------------features sections-------------------------------------------------- */
+
+
+
 .container3{
     position: relative;
     padding: 70px 100px;
@@ -70,17 +86,25 @@ margin-top: 20px;
     grid-template-columns: repeat(2, 1fr);
     gap: 34px;
 }
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+
 .container3 img{
     width: 530px;
     height: 982px;
+    margin-top: 20%;
 }
 .container3-texts div{
-    width: 587.63px;
-    height: 181px;
+    width: 520px;
+    height: 150px;
     border-radius: 8px;
     box-shadow: 0px 4px 30px 0px #0000000F;
     padding-top: 4%;
-
 }
 .exprience{
     position: absolute;
@@ -89,47 +113,68 @@ margin-top: 20px;
     background: #FF900E;
     border-radius: 15px;
     text-align: center;
-    right: 30%;
+    right: 35%;
     bottom: 0%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
 }
-/*  Facts css*/
+
+
+/*........................  Facts section css..........................*/
+
+
+
+
 .container4{
     padding: 70px 100px;
 }
 .box{
-    height: 169px;
-    width: 137px;
+    height: 50px;
+    width: 13px;
     border: 1px solid yellow;
     text-align: center;
-  
+    align-items: center;
+    height: 169px;
+    width: 225px;
+    padding-top: 15%;
 }
 .icons{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 1%;
     gap: 50px;
 
 }
-/* sponsors */
+
+
+/*....................................... sponsors section css...............................*/
+
+
+
 .container5{
     padding: 70px 100px;
     margin-bottom: 70px;
 }
 .sponsors-text{
     text-align: center;
+    padding: 30px;
 }
 .sponsors-logo{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-top: 13%;
+    margin-left: 30px;
    
 }
-/* animetion */
+
+
+/*............................................ animetion ....................................*/
+
+
+
 .logo1:hover{
     transform: rotate(20deg);
 }
@@ -158,12 +203,34 @@ margin-top: 20px;
     transform: translate(3em, 0);
 
 }
+
+
+/* ...........................................footer section...............................................*/
+
+
+
 footer
 {
     text-align: center;
     margin-bottom: 14%;
+    background: rgba(255, 144, 14, 0.1);
+    height: 60px;
+    width: 80%;
+    margin-left: 110px;
+    border-radius: 17px;
+    padding-top: 1%;
 }
-@media screen and (max-width: 567px) {
+
+
+
+/* ......................................responsive css........................................... */
+
+
+
+@media screen and (max-width: 575px) {
+    .navbar{
+        display: none;
+    }
     .container1, .container2, .container3, .container4, .container5{
         padding: 0 0 0 0;
     }
@@ -186,6 +253,9 @@ footer
     .container3 img{
         width: 100%;
     }
+    .container4 h1 p{
+        text-align: center;
+    }
     .icons{
         grid-template-columns: repeat(1, 100%);
 
@@ -195,5 +265,9 @@ footer
         gap: 80px;
         margin-left: 10%;
         
+    }
+    footer{
+        height: 100px;
+        margin-left: 50px;
     }
 }
